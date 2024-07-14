@@ -1,7 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* variable color */
+:root{
+    --dark-01: #131313;
+    --dark-02: #424242;
+    --dark-03: #727272;
+    --primary: #FF900E;
+    --white: #fff;
 
+}
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: "Work Sans", sans-serif;
+
+}
+
+/* utility  class*/
+.display-flex{
+    display: flex;
+}
+.primary-btn{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+
+/* Navigation bar style */
+header{
+  background-color: rgba(255, 144, 14, 0.1);
+  padding-bottom: 3rem;
+ 
+}
+.nav-bar{
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+.nav-bar h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-01);
+
+}
+.li-item{
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.li-item li{
+    list-style: none;
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+
+}
+.li-item li a{
+    text-decoration: none;
+    color: var(--dark-02);
+
+}
+
+/* banner style */
+.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-content h1{
+    color: var(--dark-01);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 3.8rem;
+}
+.banner-content p{
+    color: var(--dark-03);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.banner img{
+    width: 100%;
+    
+}
+
+
+
+
+
+/* responsive work */
+@media only screen and (max-width: 576px) {
+   .li-item,
+   .nav-bar{
+    flex-direction: column;
+   } 
+   .banner-image img{
+    width: 100%;
+}
+.nav-bar h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.banner-content h1{
+    font-size: 2.5rem;
+}
+
 }
