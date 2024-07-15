@@ -143,7 +143,57 @@ header{
     margin-bottom: 2rem;
 }
 
+/* fact section start */
 
+
+.fact-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+}
+.fact-section h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    color: var(--dark-01);
+    margin-bottom: 1.5rem;
+}
+.fact-section p{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    color: var(--dark-03);
+    margin-bottom: 4rem;
+}
+.fact-container{
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+.fact-item{
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    height: 241px;
+    width: 241px;
+}
+.fact-item h1{
+    font-size: 3rem;
+    color: var(--dark-02);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+.fact-item h4{
+    font-size: 1. 2rem;
+    color: var(--dark-03);
+    font-weight: 600;
+
+}
 
 
 
@@ -182,5 +232,18 @@ header{
 }
 .text-container h1{
     font-size: 2.3rem;
+}
+/* fact section */
+.fact-section h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.fact-section p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.fact-container{
+    flex-direction: column;
+    gap: 2rem;
 }
 }
